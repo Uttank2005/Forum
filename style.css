@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("image 5.gif") no-repeat center center fixed;
+  background-size: cover;
+  z-index: -2;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+nav {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  background-color: transparent;
+}
+
+.logo img {
+  height: 7vh;
+  width: 7vh;
+  margin: 1vh;
+  margin-top: 20px;
+  border-radius: 50px;
+}
+
+.pages {
+  display: flex;
+  gap: 40px;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.pages a {
+  text-decoration: none;
+  color: rgb(63, 222, 63);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.heading {
+  height: 600px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.dif-heading {
+  height: 600px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.dif-heading H1 {
+  margin-bottom: auto;
+}
+
+.alt-heading {
+  height: 600px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.alt-heading H1 {
+  margin-bottom: auto;
+}
+
+/* Style the form container to center and constrain its width */
+.alt-heading form {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style input boxes and textarea */
+.alt-heading form input[type="text"],
+.alt-heading form input[type="email"],
+.alt-heading form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add focus styles for better user experience */
+.alt-heading form input[type="text"]:focus,
+.alt-heading form input[type="email"]:focus,
+.alt-heading form textarea:focus {
+  border-color: rgb(63, 222, 63);
+  box-shadow: 0 0 5px rgba(63, 222, 63, 0.5);
+  outline: none;
+}
+
+/* Style the submit button */
+.alt-heading form button {
+  background-color: rgb(63, 222, 63);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for button */
+.alt-heading form button:hover {
+  background-color: #4bb74b;
+}
+
+
+@media (max-width: 768px) {
+
+  body {
+    position: relative;
+  }
+  
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("image 5 2.gif") no-repeat center center fixed;
+    background-size: cover;
+    z-index: -2;
+  }
+  
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: auto;
+  }
+
+  .logo img {
+    height: 5vh;
+    width: 5vh;
+  }
+
+  .pages {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+  }
+
+  .pages a {
+    font-size: 30px;
+    margin: 0 5px;
+  }
+
+  .heading {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: auto;
+    height: calc(100vh - 60px);
+    padding: 20px;
+    font-size: 30px;
+  }
+
+  .dif-heading {
+    height: 600px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 30px;
+  }
+  
+  .dif-heading H1 {
+    margin-bottom: auto;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .pages a {
+    font-size: 20px;
+  }
+
+  .logo img {
+    height: 4vh;
+    width: 4vh;
+  }
+
+}

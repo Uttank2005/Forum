@@ -56,7 +56,7 @@ nav {
 
 .pages a {
   text-decoration: none;
-  color: rgb(63, 222, 63);
+  color: rgb(255, 255, 255);
   font-size: 30px;
   font-weight: bold;
 }
@@ -218,7 +218,7 @@ nav {
     margin-top: auto;
     height: calc(100vh - 60px);
     padding: 20px;
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .dif-heading {
@@ -230,7 +230,7 @@ nav {
     text-align: center;
     margin-top: 40px;
     padding: 20px;
-    font-size: 30px;
+    font-size: 20px;
   }
   
   .dif-heading H1 {
@@ -247,6 +247,29 @@ nav {
   .logo img {
     height: 4vh;
     width: 4vh;
+  }
+
+  .heading {
+    font-size: 15px;
+  }
+  .alt-heading {
+    font-size: 15px;
+  }
+  .dif-heading {
+    font-size: 15px;
+  }
+
+}
+
+@media (max-width: 330px) {
+  .pages a {
+    font-size: 15px;
+    gap: 5px;
+  }
+
+  .logo img {
+    height: 6vh;
+    width: 6vh;
   }
 
 }

@@ -270,6 +270,36 @@ nav {
     font-size: 15px;
   }
 
+  .banner {
+    margin-top: 25vh;
+  }
+
+  .ebox {
+    padding-top: 10px;
+    border-radius: 10px;
+    margin: auto;
+    width: 80%;
+    height: 30vh;
+    background-color: white;
+  }
+
+  .ebox-img {
+    border-radius: 15px;
+    margin: auto;
+    width: 90%;
+    height: 50%;
+    background: url("newimage.jpg");
+    background-size: cover;
+  }
+
+  .title {
+    margin: 20px auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+  }
+
 }
 
 @media (max-width: 337px) {
